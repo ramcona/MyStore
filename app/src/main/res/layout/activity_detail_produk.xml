@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.DetailProdukActivity">
+
+        <include layout="@layout/layout_toolbar"
+            android:id="@+id/toolbar"/>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+                <ImageView
+                    android:id="@+id/iv_produk"
+                    android:src="@drawable/ic_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"/>
+
+                <TextView
+                    android:id="@+id/tv_kode"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/abu_pekat"
+                    style="@style/body10"
+                    android:text="KODEPRODUK"/>
+                <TextView
+                    android:id="@+id/tv_nama"
+                    style="@style/title14"
+                    android:text="@string/app_name"/>
+
+                <TextView
+                    android:id="@+id/tv_harga"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/colorPrimaryTeks"
+                    style="@style/body12"
+                    android:text="Rp100.000"/>
+
+                <TextView
+                    android:id="@+id/tv_stok"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/abu_pekat"
+                    style="@style/body10"
+                    android:text="Rp100.000"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_15sdp"
+                    style="@style/title12"
+                    android:text="Deskripsi Produk"/>
+
+                <TextView
+                    android:id="@+id/tv_deskripsi"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    style="@style/body12"
+                    android:text="Deskripsi Produk"/>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

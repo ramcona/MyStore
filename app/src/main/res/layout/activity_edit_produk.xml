@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_toolbar"
+            android:id="@+id/toolbar"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    style="@style/body12"
+                    android:text="@string/teks_nama_produk"/>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/background_border_abu"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparant"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    style="@style/body12"
+                    android:text="@string/teks_kode_produk"/>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/background_border_abu"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_kode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparant"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    style="@style/body12"
+                    android:text="@string/teks_deskripsi"/>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/background_border_abu"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_deskripsi"
+                        android:layout_width="match_parent"
+                        android:lines="3"
+                        android:layout_gravity="start"
+                        android:gravity="start"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparant"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    style="@style/body12"
+                    android:text="@string/teks_harga"/>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/background_border_abu"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/edt_harga"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparant"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    style="@style/body12"
+                    android:text="@string/teks_stok"/>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/background_border_abu"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/edt_stok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparant"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    style="@style/body12"
+                    android:text="@string/teks_foto_produk"/>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/background_border_abu"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_produk"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@drawable/ic_product"/>
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/tv_hapus_image"
+                        android:layout_gravity="center"
+                        android:textColor="@color/red"
+                        style="@style/body10"
+                        android:text="@string/teks_hapus"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_simpan"
+                    android:text="@string/teks_perbarui"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    style="@style/button_main"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

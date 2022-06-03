@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">My Store</string>
+    <string name="teks_tidak_ada_data">Tidak ada data tersedia</string>
+    <string name="teks_detail_message_kosong">Mohon periksa koneksi internet anda atau coba beberapa saat lagi</string>
+    <string name="teks_muat_ulang">Muat Ulang</string>
+
+    <string name="teks_terjadi_kesalahan">Terjadi Kesalahan</string>
+    <string name="teks_tidak_dapat_tehubung_ke_server">Tidak dapat terhubung ke server, coba beberapa saat lagi. 2001</string>
+    <string name="teks_terjadi_kesalahan_code">Terjadi kesalahan saat memproses data. coba beberapa saat lagi. %d</string>
+    <string name="teks_terjadi_kesalahan_deskripsi">Terjadi kesalahan saat memproses data. coba beberapa saat lagi. 2004</string>
+    <string name="teks_simpan">Simpan</string>
+    <string name="teks_nama_produk">Nama Produk</string>
+    <string name="teks_deskripsi">Deskripsi</string>
+    <string name="teks_harga">Harga</string>
+    <string name="teks_stok">Stok</string>
+    <string name="teks_foto_produk">Foto Produk</string>
+    <string name="teks_hapus">Hapus</string>
+    <string name="teks_add_product">Tambah Produk</string>
+    <string name="teks_kode_produk">Kode Produk</string>
+    <string name="produk">Produk</string>
+    <string name="teks_produk_berhasil_ditambah">Produk baru berhasil ditambahkan</string>
+    <string name="teks_produk_berhasil_diperbarui">Produk baru berhasil diperbarui</string>
+
+    <string name="media_picker_select_from">Select From:</string>
+    <string name="media_picker_camera">Camera</string>
+    <string name="media_picker_gallery">Gallery</string>
+    <string name="media_picker_ok">Ok</string>
+    <string name="media_picker_cancel">Cancel</string>
+    <string name="media_picker_some_permission_is_denied">Some Permission is Denied</string>
+    <string name="media_picker_you_need_to_grant_access_to">You need to grant access to</string>
+    <string name="media_picker_read_Write_external_storage"><![CDATA[Read & Write External Storage]]></string>
+    <string name="teks_perbarui">Perbarui</string>
+    <string name="teks_edit_produk">Edit Produk</string>
+    <string name="teks_username">Username</string>
+    <string name="belum_punya_akun">Belum punya akun ?</string>
+    <string name="buat_sekarang">Daftar</string>
+    <string name="teks_nama_lengkap">Nama Lengkap</string>
+</resources>
