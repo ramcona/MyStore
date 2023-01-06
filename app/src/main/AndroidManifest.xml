@@ -47,6 +47,7 @@
             android:exported="false">
 
         </activity>
+
         <activity android:name=".mediapicker.Image.ImageActivity" />
         <activity android:name=".mediapicker.Video.VideoActivity" />
 

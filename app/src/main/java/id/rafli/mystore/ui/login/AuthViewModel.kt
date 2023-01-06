@@ -111,7 +111,7 @@ class AuthViewModel : ViewModel() {
 
     fun register(user: User) {
 
-        subscription = repo.login(user)
+        subscription = repo.register(user)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .doOnSubscribe { isLoading.value = true }

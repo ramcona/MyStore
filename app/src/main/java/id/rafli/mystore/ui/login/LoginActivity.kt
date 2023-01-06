@@ -1,10 +1,7 @@
 package id.rafli.mystore.ui.login
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import id.rafli.mystore.R
 import id.rafli.mystore.databinding.ActivityLoginBinding
 import id.rafli.mystore.helper.BaseActivity
 import id.rafli.mystore.helper.SweetAlert
